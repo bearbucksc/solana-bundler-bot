@@ -1,3 +1,5 @@
+from datetime import datetime
+
 class Wallet:
     def __init__(self, address, created_at, last_used=None):
         self.address = address

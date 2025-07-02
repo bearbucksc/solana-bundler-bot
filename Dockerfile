@@ -24,12 +24,12 @@ COPY . .
 RUN mkdir -p /app/static /app/templates
 
 # Expose ports
-EXPOSE 5000  # Flask web interface
-EXPOSE 8765  # WebSocket port
+EXPOSE 5000
+EXPOSE 8765
 
 # Environment variables
-ENV FLASK_APP=app.py
+ENV FLASK_APP=main.py
 ENV FLASK_ENV=production
 
 # Command to run the application
-CMD ["python", "app.py"]
+CMD ["python", "main.py"]

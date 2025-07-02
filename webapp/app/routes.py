@@ -5,6 +5,10 @@ from webapp.utils.wallet_aging import WalletAgingSystem
 from webapp.utils.alert import XSignAlert
 import os
 import logging
+from solana.rpc.api import Client
+from solana.transaction import Transaction
+from solana.rpc.commitment import Confirmed
+from solana.rpc.types import TxOpts
 from datetime import datetime
 
 # Initialize components
